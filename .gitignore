@@ -18,6 +18,11 @@ target/
 *.iws
 *.iml
 *.ipr
+*.properties
+tailwind.config.js
+*.json
+.cmd
+*xml
 
 ### NetBeans ###
 /nbproject/private/
