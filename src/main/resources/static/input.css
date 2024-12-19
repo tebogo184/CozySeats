@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-border{
+    box-shadow: 0px 0px 0px 1px #d8d8d8;
+}
+.quantity-border{
+
+    background-color: black;
+    color:white;
+    border: 3px solid black;
+    
+}
+.border-color{
+    border-color: #ddd;
+}
+
+.form-color{
+   color: #797d7f;
+}
+
+.heart {
+
+    margin-top: 50%;
+   
+}

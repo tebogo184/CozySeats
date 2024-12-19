@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/main/resources/static/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>AboutProduct</title>
+</head>
+<body>
+
+    <nav class="flex">
+        <div class="mr-2 justify-start"><a href="Home.html"><img src="/src/main/resources/static/images/logo.png" alt=""></a></div>
+        <ul class="flex gap-6 pl-96 space-x-11 mt-12 font-semibold cursor-pointer">
+            <li><a href="Home.html">Home</a></li>
+            <li id="registerNavLink"><a>Register</a></li>
+            <li id="loginNavLink"><a>Login</a></li>
+            <li ><a href="Wishlist.html">Wishlist</a></li>
+            <li id="cartNavLink" ><a href="Cart.html">Cart</a></li>
+            <li id="invoiceNavLink"><a href="Invoices.html">Invoice</a></li>
+
+        </ul>
+    </nav>
+    <section class="absolute  custom-border top-28 right-96 w-4/12 hidden z-0" id="login-box">
+        <div class="relative flex flex-col justify-center items-center">
+           <div class="absolute top-0 right-0 cursor-pointer" ><i class="bi bi-x-lg" id="closeBtn"></i></div>
+            <h1 class="font-bold  text-2xl">CozySeats</h1>
+            <h6 class="form-color font-bold subpixel-antialiased">Sit back and relax.</h6>
+        </div>
+        <h3 class="mt-10 text-xl flex justify-center place-items-center ">Log in</h3>
+        <form class="flex flex-col justify-center items-center mt-10"  method="post" action="#">
+            <label for="email" class="form-color relative mr-60">Email</label>
+            <input type="email" id="email" name="email" class="border-color border-2 w-72 border-solid h-9 rounded-md " >
+            <label for="password" class="form-color relative mr-56 mt-4">Password</label>
+            <input type="password" id="password" class="border-color border-2 w-72 border-solid h-9 rounded-md">
+            <button  type="submit" class="mt-8 border-2 h-9 rounded-md bg-green-700 border-green-700 text-white font-bold cursor-pointer w-72" id="submitBtn" >Submit</button>
+            <label id="errorLabel" hidden class="text-red-600">Password or Username is incorrect!!</label>
+            <span class="mt-6 font-normal mb-7">Forgot your password?<a href="#" class="text-green-700">Reset</a></span>
+
+        </form>
+    </section>
+
+    <section class="absolute  custom-border top-28 right-96 w-4/12 hidden  z-0" id="register-box">
+        <div class="relative flex flex-col justify-center items-center">
+           <div class="absolute top-0 right-0 cursor-pointer" id="closeBtn"><i class="bi bi-x-lg"></i></div>
+            <h1 class="font-bold  text-2xl">CozySeats</h1>
+            <h6 class="form-color font-bold subpixel-antialiased">Sit back and relax.</h6>
+        </div>
+        <h3 class="mt-10 text-xl flex justify-center place-items-center ">Register</h3>
+        <form class="flex flex-col justify-center items-center mt-10"  method="post" action="#">
+            <label for="firstName" class="form-color relative mr-60">First Name</label>
+            <input type="text" id="firstName" name="firstName" class="border-color border-2 w-72 border-solid h-9 rounded-md " >
+            <label for="surname" class="form-color relative mr-60">Surname</label>
+            <input type="text" id="surname" name="surname" class="border-color border-2 w-72 border-solid h-9 rounded-md " >
+            <label for="RegisterEmail" class="form-color relative mr-60">Email</label>
+            <input type="email" id="RegisterEmail" name="email" class="border-color border-2 w-72 border-solid h-9 rounded-md " >
+            <label for="RegisterPassword" class="form-color relative mr-56 mt-4">Password</label>
+            <input type="password" id="RegisterPassword" class="border-color border-2 w-72 border-solid h-9 rounded-md">
+            <button  type="submit" class="mt-8 border-2 h-9 rounded-md bg-green-700 border-green-700 text-white font-bold cursor-pointer w-72" id="registerBtn" >Submit</button>
+            <label id="errorLabel" hidden class="text-red-600">Password or Username is incorrect!!</label>
+            <span class="mt-6 font-normal mb-7">Forgot your password?<a href="#" class="text-green-700">Reset</a></span>
+
+        </form>
+    </section>
+
+
+    <section class="flex justify-center items-center" id="container">
+
+    </section>
+
+    <script src="/src/main/resources/static/Js/AboutProduct.js"></script>
+    <script src="/src/main/resources/static/Js/Navbar.js"></script>
+
+</body>
+</html>

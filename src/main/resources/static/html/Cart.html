@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/main/resources/static/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Cart</title>
+</head>
+<body>
+    
+    
+    <nav class="flex">
+        <div class="mr-2 justify-start"><a href="Home.html"><img src="/src/main/resources/static/images/logo.png" alt=""></a></div>
+        <ul class="flex gap-6 pl-96 space-x-11 mt-12 font-semibold cursor-pointer">
+            <li><a href="Home.html">Home</a></li>
+            <li id="registerNavLink"><a >Register</a></li>
+            <li id="loginNavLink"><a>Login</a></li>
+            <li ><a href="Wishlist.html">Wishlist</a></li>
+            <li id="cartNavLink" ><a href="Cart.html">Cart</a></li>
+            <li id="invoiceNavLink"><a href="Invoices.html">Invoice</a></li>
+        </ul>
+    </nav>
+
+<section class="flex justify-center items-center w-full">
+    <div class="table w-8/12 " id="cart-container"></div>
+    <div id="checkout">
+
+        <span>Cart Summary:</span>
+        <div id="cartTotal">Total: R 0</div>
+        <a href="Checkout.html" class="mt-8 border-2 h-9 rounded-md bg-green-700 border-green-700 text-white font-bold cursor-pointer w-72">Checkout</a>
+    </div>
+</section>
+
+    <script src="/src/main/resources/static/Js/Cart.js"></script>
+    <script src="/src/main/resources/static/Js/Navbar.js"></script>
+
+</body>
+</html>
